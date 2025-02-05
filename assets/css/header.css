@@ -1,0 +1,38 @@
+.header-warning{
+    background-color: black;
+    color: white;
+    padding: 16px 0;
+    text-align: center;
+}
+
+.header-warning span{
+    font-weight: bold;
+}
+
+.header-warning .desktop{
+    display: none;
+}
+
+header{
+    background-color: white;
+
+}
+
+header .header-main{
+    max-width: 1024px;
+    margin: auto;
+    padding: 33px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media(width>714px){
+    .header-warning .desktop{
+        display: block;
+    }
+
+    .header-warning .mobile{
+        display: none;
+    }
+}
