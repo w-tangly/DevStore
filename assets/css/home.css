@@ -1,36 +1,30 @@
 .banner{
     margin: 0 24px;
 }
-
 .banner-area{
     width: 100%;
     aspect-ratio: 2.9;
     position: relative;
 }
-
 .banner-area a{
-    font-display: block;
+    display: block;
     position: absolute;
     left: 0;
     right: 0;
     top: 0;
 }
-
 .banner-area a img{
     width: 100%;
 }
-
 .banner-area a.active{
     z-index: 10;
 }
-
 .banner-counter-area{
     display: flex;
     justify-content: center;
 }
-
 .banner-counter{
-    display: inline;
+    display: inline-flex;
     gap: 10px;
     margin-top: 15px;
     padding: 10px;
