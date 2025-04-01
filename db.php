@@ -1,20 +1,19 @@
 <?php
-    // variável para o servidor do banco
-    $host = "localhost";
-
-    // variável para o usuário de acesso ao banco
+    //variavel para o servidor do banco
+    $host="localhost";
+    //variavel para o usuario de acesso ao banco
     $user = "root";
-
-    // variável para a senha do usuário
+    //variavel para a senha do usuario
     $password = "";
-
-    // variável para o nome do banco
+    //variavel para o nome do banco
     $dbname = "devstore";
-
-    // tenta conectar ao banco
+    //tenta conectar ao banco
     try{
-        $pdo = new PDO("mysql:host=$host; dbname=$dbname; charset=utf-8;", $user, $password);
-        $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        $pdo = new PDO("mysql:host=$host;dbname=$dbname;"
+        , $user, $password);
+        $pdo->setAttribute(PDO::ATTR_ERRMODE, 
+        PDO::ERRMODE_EXCEPTION);
     }catch (PDOException $e){
         die("Falha na conexão: ". $e->getMessage());
     }
+?>
