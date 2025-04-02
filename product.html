@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, 
@@ -11,21 +12,22 @@
     <link rel="stylesheet" href="./assets/css/footer.css">
     <link rel="stylesheet" href="./assets/css/home.css">
     <link rel="stylesheet" href="./assets/css/single-product.css">
+    <link rel="stylesheet" href="./assets/css/product.css">
 </head>
+
 <body>
     <section class="header-warning">
         <div class="mobile"><span>FRETE GRÁTIS</span>
-         para todo o Brasil!</div>
-         <div class="desktop"><span>FRETE GRÁTIS</span>
-         para todo o Brasil nas compras acima de
-        R$199,00.<span>APROVEITA</span></div>
+            para todo o Brasil!</div>
+        <div class="desktop"><span>FRETE GRÁTIS</span>
+            para todo o Brasil nas compras acima de
+            R$199,00.<span>APROVEITA</span></div>
     </section>
     <header>
         <div class="header-main">
             <div class="header-left">
                 <a class="logo" href="./index.html">
-                    <img src="./assets/images/ui/logo-black.png"
-                     alt="DEVstore">
+                    <img src="./assets/images/ui/logo-black.png" alt="DEVstore">
                 </a>
                 <ul>
                     <li><a href="./produtos.html">Camisetas</a></li>
@@ -35,7 +37,7 @@
                 </ul>
             </div>
             <div class="header-right">
-                <input class="search" type="text" placeholder="Pesquisa"/>
+                <input class="search" type="text" placeholder="Pesquisa" />
                 <a href="./login.html" class="btn-icon">
                     <img src="./assets/images/ui/user-line.png">
                 </a>
@@ -55,17 +57,17 @@
             <a href="./produtos.html">Eletrônicos</a>
         </div>
         <div class="header-search">
-            <input class="search" type="text"
-            placeholder="O que você procura?"/>
+            <input class="search" type="text" placeholder="O que você procura?" />
         </div>
     </header>
 
     <main>
-        <section class="breadcrumb" id="breadcrumb"> Home > Adesivos >  Adesivo Android</section>
+        <div class="breadcrumb" id="breadcrumb"> Home > Adesivos > Adesivo Android</div>
 
         <section class="product" id="product">
             <div class="photo-area">
-                <div class="photo"><img src="./assets/images/products/android-stickers-adesivo 1.png" alt="" id="fotoProd"></div>
+                <div class="photo"><img src="./assets/images/products/android-stickers-adesivo 1.png" alt=""
+                        id="fotoProd"></div>
             </div>
             <div class="info">
                 <div class="id" id="idProd">CÓD:123</div>
@@ -82,7 +84,32 @@
                 <div class="buttons">
                     <div class="button">Adicionar à sacola</div>
                     <div class="btn-icon"><img src="./assets/images/ui/heart-3-line.png" alt=""></div>
+                    <div class="btn-icon"><img src="./assets/images/ui/share-line.png" alt=""></div>
                 </div>
+                <div class="shipping">
+                    <div>Calcular frete e prazo:</div>
+                    <div class="shipping-input">
+                        <input type="text" class="input" placeholder="Digite o seu CEP">
+                        <div class="button">Calcular</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="description">
+            <div class="desc-header">
+                <div>Informações do produto</div>
+                <div class="btn-icon">
+                    <img src="./assets/images/ui/arrow-left-s-line.png" alt="">
+                </div>
+            </div>
+            <div class="desc-body" id="descProd">Texto sobre o produto</div>
+        </section>
+
+        <section class="related">
+            <div class="related-title">Você também vai gostar:</div>
+            <div class="related-grid" id="products-area">
+                <!-- Itens vão vir pelo JS -->
             </div>
         </section>
     </main>
@@ -120,7 +147,7 @@
                     <a href="" class="btn-icon">
                         <img src="./assets/images/ui/instagram-line.png" alt="">
                     </a>
-                
+
                     <a href="" class="btn-icon">
                         <img src="./assets/images/ui/linkedin-line.png" alt="">
                     </a>
@@ -146,4 +173,6 @@
 <script type="text/javascript" src="./assets/js/header.js"></script>
 <script type="text/javascript" src="./assets/js/footer.js"></script>
 <script type="text/javascript" src="./assets/js/home.js"></script>
+<script type="text/javascript" src="./assets/js/backDetalhe.js"></script>
+
 </html>
