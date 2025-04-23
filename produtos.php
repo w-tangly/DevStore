@@ -39,25 +39,38 @@
         echo json_encode($result, 
         JSON_UNESCAPED_UNICODE);
     }
-
-    // função para trazer os produtos com filtro de id
+    //FUNÇÃO PARA TRAZER OS PRODUTOS COM FILTRO DE ID
     function handleGetFiltroID($pdo){
-        // variável para pegar o valor do filtro
+        //variavel para pegar o valor do filtro
         $filtro = $_GET['idProd'];
-
-        // sql para a consulta
-        $sql = "SELECT * from tblProdutos where idProd='$filtro'";
-
-        // prepara a execução 
-        $stmt = $pdo -> prepare($sql);
-
-        // executa o comando o sql
+        //sql para a consulta
+        $sql = "SELECT * from tblProdutos where
+        idProd='$filtro'";
+        //prepara a execucao
+        $stmt = $pdo->prepare($sql);
+        //executa o comando sql
         $stmt->execute();
-
-        // variável para receber os dados resultantes
+        //variavel pra receber os dados resultantes
         $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
-
-        // exibe os dados em formato json
-        echo json_encode($result, JSON_UNESCAPED_UNICODE);  
+        //exibe os dados em formato json
+        echo json_encode($result, JSON_UNESCAPED_UNICODE);
+        
+    }
+    //Função para filtrar por Categoria
+    function handleGetFiltroCategoria($pdo){
+        //variavel para capturar o valor do filtro
+        $filtro = $_GET['categoriaProd'];
+        //sql para consultar na base
+        $sql = "SELECT * FROM tblProdutos WHERE 
+        categoriaProd = '$filtro'";
+        //stmt para preparar a execucao
+        $stmt = $pdo->prepare($sql);
+        //executa a consulta
+        $stmt->execute();
+        //variavel para receber os dados
+        $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
+        //exibe os dados em json
+        echo json_encode($result, 
+        JSON_UNESCAPED_UNICODE);
     }
 ?>

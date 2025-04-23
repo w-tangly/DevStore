@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, 
@@ -11,21 +12,22 @@
     <link rel="stylesheet" href="./assets/css/footer.css">
     <link rel="stylesheet" href="./assets/css/home.css">
     <link rel="stylesheet" href="./assets/css/single-product.css">
+    <link rel="stylesheet" href="./assets/css/produtos.css">
 </head>
+
 <body>
     <section class="header-warning">
         <div class="mobile"><span>FRETE GRÁTIS</span>
-         para todo o Brasil!</div>
-         <div class="desktop"><span>FRETE GRÁTIS</span>
-         para todo o Brasil nas compras acima de
-        R$199,00.<span>APROVEITA</span></div>
+            para todo o Brasil!</div>
+        <div class="desktop"><span>FRETE GRÁTIS</span>
+            para todo o Brasil nas compras acima de
+            R$199,00.<span>APROVEITA</span></div>
     </section>
     <header>
         <div class="header-main">
             <div class="header-left">
                 <a class="logo" href="./index.html">
-                    <img src="./assets/images/ui/logo-black.png"
-                     alt="DEVstore">
+                    <img src="./assets/images/ui/logo-black.png" alt="DEVstore">
                 </a>
                 <ul>
                     <li><a href="./produtos.html">Camisetas</a></li>
@@ -35,7 +37,7 @@
                 </ul>
             </div>
             <div class="header-right">
-                <input class="search" type="text" placeholder="Pesquisa"/>
+                <input class="search" type="text" placeholder="Pesquisa" />
                 <a href="./login.html" class="btn-icon">
                     <img src="./assets/images/ui/user-line.png">
                 </a>
@@ -55,16 +57,88 @@
             <a href="./produtos.html">Eletrônicos</a>
         </div>
         <div class="header-search">
-            <input class="search" type="text"
-            placeholder="O que você procura?"/>
+            <input class="search" type="text" placeholder="O que você procura?" />
         </div>
     </header>
-    <!-- VAI TER CONTEUDO AQUI -->
+    <main>
+        <section class="breadcrumb" id="breadcrumb"> 
+            Home > Produtos</section>
+        <section class="info">
+            <div class="product-qt" id="qtde">
+                <span>12</span> Produtos
+            </div>
+            <div class="top-buttons">
+                <div class="top-button" data-name="order">
+                    <div class="top-button-name">
+                        Ordenar
+                    </div>
+                    <div class="top-button-icon">
+                        <img src="./assets/images/ui/arrow-up-down-line.png" />
+                    </div>
+                </div>
+                <div class="top-button" data-name="filter">
+                    <div class="top-button-name">Filtrar</div>
+                    <div class="top-button-icon">
+                        <img src="./assets/images/ui/equalizer-2-line.png" />
+                    </div>
+                </div>
+            </div>
+            <div class="order-area">
+                <label for="order">Ordenar por</label>
+                <select id="order" name="order">
+                    <option value="price">Preço</option>
+                    <option value="bestselling">
+                        Mais Vendidos
+                    </option>
+                    <option value="alpha">Ordem
+                        Alfabética
+                    </option>
+                </select>
+            </div>
+        </section>
+
+        <section class="products">
+            <div class="filters">
+                <div class="filter">
+                    <div class="filter-header">
+                        <div class="filter-name">Tecnologia</div>
+                        <img class="filter-icon" src="./assets/images/ui/arrow-left-s-line.png" alt="">
+                    </div>
+
+                    <div class="filter-body">
+                        <label class="filter-option">
+                            <input type="checkbox" name="tecnologia" id="rn">
+                            <span>React Native</span>
+                        </label>
+
+                        <label class="filter-option">
+                            <input type="checkbox" name="tecnologia" id="node">
+                            <span>Node</span>
+                        </label>
+
+                        <label class="filter-option">
+                            <input type="checkbox" name="tecnologia" id="laravel">
+                            <span>Laravel</span>
+                        </label>
+
+                        <label class="filter-option">
+                            <input type="checkbox" name="tecnologia" id="React">
+                            <span>React</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="products">
+            <div class="grid" id="produtosGrid"></div>
+        </section>
+
+    </main>
     <footer>
         <div class="footer-menu">
             <a class="logo" href="">
-                <img src="./assets/images/ui/logo-white.png"
-                alt="DEVstore"/>
+                <img src="./assets/images/ui/logo-white.png" alt="DEVstore" />
             </a>
             <ul>
                 <li><a href="./produtos.html">Camisetas</a></li>
@@ -78,37 +152,37 @@
                 <div class="footer-title">Precisa de ajuda?</div>
                 <div class="footer-icons">
                     <a class="btn-icon-text" href="">
-                        <img src="./assets/images/ui/mail-line.png"/>
+                        <img src="./assets/images/ui/mail-line.png" />
                         <span>devstore@email.com</span>
                     </a>
                     <a class="btn-icon-text" href="">
-                        <img src="./assets/images/ui/phone-line.png"/>
+                        <img src="./assets/images/ui/phone-line.png" />
                         <span>(00)0000-0000</span>
                     </a>
                 </div>
             </div>
             <div class="social">
                 <div class="footer-title">Acompanhe nas redes
-                sociais</div>
+                    sociais</div>
                 <div class="footer-icons">
                     <a href="" class="btn-icon">
-                        <img src="./assets/images/ui/instagram-line.png"/>
+                        <img src="./assets/images/ui/instagram-line.png" />
                     </a>
                     <a href="" class="btn-icon">
-                        <img src="./assets/images/ui/linkedin-line.png"/>
+                        <img src="./assets/images/ui/linkedin-line.png" />
                     </a>
                     <a href="" class="btn-icon">
-                        <img src="./assets/images/ui/facebook-line.png"/>
+                        <img src="./assets/images/ui/facebook-line.png" />
                     </a>
                     <a href="" class="btn-icon">
-                        <img src="./assets/images/ui/twitter-x-fill.png"/>
+                        <img src="./assets/images/ui/twitter-x-fill.png" />
                     </a>
                 </div>
             </div>
         </div>
         <div class="footer-bottom">
             <div class="btn-icon">
-                <img src="./assets/images/ui/arrow-up-line.png"/>
+                <img src="./assets/images/ui/arrow-up-line.png" />
             </div>
         </div>
     </footer>
@@ -117,4 +191,7 @@
 <script type="text/javascript" src="./assets/js/header.js"></script>
 <script type="text/javascript" src="./assets/js/footer.js"></script>
 <script type="text/javascript" src="./assets/js/home.js"></script>
+<!-- Dia 23/04 -->
+<script type="text/javascript" src="./assets/js/backLista.js"></script>
+
 </html>
